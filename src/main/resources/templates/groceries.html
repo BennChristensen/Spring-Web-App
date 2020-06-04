@@ -1,0 +1,15 @@
+ <!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org" lang="eg">
+<head>
+<meta charset="ISO-8859-1">
+<title>Categories</title>
+<link rel="stylesheet" th:href="@{/styles.css}" />
+</head>
+<body>
+	<div th:each="grocery : ${Groceries}">
+		<div th:text="${grocery.name}">name</div>
+		<div th:text="${grocery.price}">price</div>
+	</div>
+</body>
+</html>
